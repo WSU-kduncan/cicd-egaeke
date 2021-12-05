@@ -6,3 +6,7 @@ Part 1:
         To run the Container: To run the container, you enter the command: "docker run -dit --rm -p 8080:80 project6" which will run the container in the background (daemon) and then removes it upon stopping it with which it uses port 8080 and interacts with port 80 (i think).
         To view the project: Once the container is created and is running, you can go to a browser and enter "http://localhost:8080/server.html" (server.html being the name) too see the contents of the container running.
 Part 2:
+    Create public DockerHub repo: navigate to DockerHub account and press "create new repository" option. Then all you need to do is name and specify if the repo will be private or public and then press create.
+    Configure GitHub secrets:
+        what credentials are needed: the DockerHub username as well as the DockerHub access token
+        set secrets and secret names: the secrets are the DockerHub username and access token which are under the names DOCKER_HUB_USERNAME and DOCKER_HUB_ACCESS_TOKEN respectively. They are located within the GitHub repository in the secrets section.
