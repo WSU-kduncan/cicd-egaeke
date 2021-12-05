@@ -12,3 +12,6 @@ Part 2:
         set secrets and secret names: the secrets are the DockerHub username and access token which are under the names DOCKER_HUB_USERNAME and DOCKER_HUB_ACCESS_TOKEN respectively. They are located within the GitHub repository in the secrets section.
     Configure GitHub Workflow:
         changed the mysite to ceg-3120-project6, and also replaced the username and token variables with the ones I used. I commited the changes, but it ended up not running because it was checking for commits on master branch, not main which I was one. I rectified that by changing the branch check from master to main.
+Part 3:
+    Pulling the image: See Running the container
+    Running the container: after installing docker on the EC2 instance and adding the user to the trusted group by using " sudo groupadd docker" and then " sudo usermod -aG docker $USER" and then logging out and logging back in. Afterwards, I was able to run the container using the command "docker run --rm -d -p 80:80 egaeke/ceg-3120-project6:latest" which bound it to port 80 using the latest tag. By running it, it automatically pulls it from the ceg-3120-project6 repository so I didn't need to pull it beforehand which I thought was neat.
