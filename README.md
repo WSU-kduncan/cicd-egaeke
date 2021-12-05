@@ -10,3 +10,5 @@ Part 2:
     Configure GitHub secrets:
         what credentials are needed: the DockerHub username as well as the DockerHub access token
         set secrets and secret names: the secrets are the DockerHub username and access token which are under the names DOCKER_HUB_USERNAME and DOCKER_HUB_ACCESS_TOKEN respectively. They are located within the GitHub repository in the secrets section.
+    Configure GitHub Workflow:
+        changed the mysite to ceg-3120-project6, and also replaced the username and token variables with the ones I used. I commited the changes, but it ended up not running because it was checking for commits on master branch, not main which I was one. I rectified that by changing the branch check from master to main.
